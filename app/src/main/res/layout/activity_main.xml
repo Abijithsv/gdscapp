@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="354dp"
+        android:layout_height="619dp"
+        android:layout_margin="30dp"
+        android:background="@color/white"
+        android:elevation="20dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="About me"
+                android:textAlignment="center"
+                android:textColor="#3700B2"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Username"
+                android:textAlignment="center"
+                android:textColorHint="#171111" />
+
+            <EditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edtUser"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Password"
+                android:textAlignment="center"
+                android:textColorHint="#120C0C" />
+
+            <Button
+                android:id="@+id/btnSign"
+                android:layout_width="297dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/edtPass"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="8dp"
+                android:background="#8C2380C9"
+                android:foregroundTint="#AA7979"
+
+                android:gravity="center"
+                android:text="Sign-In!"
+                android:textColor="#0B1A6D"
+                android:textColorHighlight="#CFA9A9"
+                android:textColorHint="#10394D"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="195dp"
+                android:layout_height="59dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="82dp"
+                android:background="#323E8BBE" />
+
+            <ImageView
+                android:id="@+id/googlebtn"
+                android:layout_width="56dp"
+                android:layout_height="53dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="198dp"
+                android:layout_marginEnd="219dp"
+                android:background="@drawable/google" />
+
+
+            <!--Google Sign In Button-->
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

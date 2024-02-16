@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fin"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <!-- Name RelativeLayout -->
+
+    <RelativeLayout
+        android:id="@+id/rlName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rlAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Name  : "
+            android:textColor="#100D0D"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="212dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/textView"
+            android:hint="enter your name"
+            android:inputType="textPersonName"
+            android:textColorHint="#1A1616" />
+    </RelativeLayout>
+
+    <!-- Age RelativeLayout -->
+
+    <RelativeLayout
+        android:id="@+id/rlAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rlName"
+        app:layout_constraintBottom_toTopOf="@+id/rlStrength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Age  : "
+            android:textColor="#141313"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="223dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:hint="enter your age"
+            android:inputType="textPersonName"
+            android:textColorHint="#221919" />
+    </RelativeLayout>
+
+    <!-- Strength RelativeLayout -->
+
+    <RelativeLayout
+        android:id="@+id/rlStrength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/rlAge"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Strength  : "
+            android:textColor="#110B0B"
+            android:textColorHint="#100C0C"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/Strength"
+            android:layout_width="212dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:hint="enter your strength"
+            android:inputType="textPersonName"
+            android:textColorHint="#251717" />
+    </RelativeLayout>
+
+    <!-- Upload Image Button -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="173dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="#6403A9F4"
+        android:gravity="center"
+        android:text="Upload Image"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlStrength" />
+
+    <!-- Save Button -->
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="111dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:background="#AF053D74"
+        android:gravity="center"
+        android:text="Save"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

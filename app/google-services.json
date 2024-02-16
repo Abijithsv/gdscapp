@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34338695778",
+    "project_id": "gdse-app",
+    "storage_bucket": "gdse-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34338695778:android:7cbc8940b4e2d6a063ff3b",
+        "android_client_info": {
+          "package_name": "com.example.gdseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYdcmqkJlSyyQZxkKwyAnCqu9jcB2luII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

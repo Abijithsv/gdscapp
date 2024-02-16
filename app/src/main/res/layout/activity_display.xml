@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final1"
+    tools:context=".DisplayActivity"
+    >
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="74dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="284dp"
+        android:gravity="center"
+        android:text="Name: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/displayAge"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_below="@id/displayName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="278dp"
+        android:gravity="center"
+        android:text="Age: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/displayStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_below="@id/displayAge"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="230dp"
+        android:gravity="center"
+        android:text="Strength: "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="187dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="367dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="305dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="389dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="231dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <!-- You can add more TextViews for other information -->
+
+</RelativeLayout>
